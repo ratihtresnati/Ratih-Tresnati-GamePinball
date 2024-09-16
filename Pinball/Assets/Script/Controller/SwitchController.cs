@@ -20,6 +20,9 @@ public class SwitchController : MonoBehaviour
     private SwitchState state;
     private Renderer renderer;
     public ScoreManager scoreManager;
+    public AudioManager audioManager;
+    public VFXManager vfxManager;
+    public Transform switchPoint;
 
     // Start is called before the first frame update
 
@@ -35,6 +38,7 @@ public class SwitchController : MonoBehaviour
     void Start()
     {
         renderer = GetComponent<Renderer>();
+        switchPoint = GetComponent<Transform>();
 
         Set(false);
 
@@ -71,6 +75,8 @@ public class SwitchController : MonoBehaviour
         }
 
         scoreManager.AddScore(score);
+        audioManager.PlaySFX(switchPoint.position);
+        vfxManager.PlayVXF(switchPoint.position);
     }
 
     private IEnumerator Blink(int times)

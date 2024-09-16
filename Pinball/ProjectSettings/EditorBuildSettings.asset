@@ -12,9 +12,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Pinball.unity
     guid: e3ea90be7177afe4da09502bfe7f3ee1
   - enabled: 1
-    path: Assets/Scenes/Switch.unity
+    path: Assets/Scenes/Test Scene/Switch.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Scenes/Bumper.unity
+    path: Assets/Scenes/Test Scene/Paddle.unity
     guid: 965bb5c554e4e0541ad3d598c0ab3701
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: f4ed11d7736879c4b88d918423c427d8
   m_configObjects: {}

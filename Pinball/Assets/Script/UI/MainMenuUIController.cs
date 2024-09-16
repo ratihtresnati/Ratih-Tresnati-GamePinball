@@ -12,11 +12,19 @@ public class MainMenuUIController : MonoBehaviour
 
     void Start()
     {
-        playButton.onClick.AddListener(PlayGame);
-        exitButton.onClick.AddListener(ExitGame);
+        if (playButton != null & exitButton != null)
+        {
+            playButton.onClick.AddListener(PlayGame);
+            exitButton.onClick.AddListener(ExitGame);
+        }
     }
 
     void PlayGame()
+    {
+        SceneManager.LoadScene(sceneGame);
+    }
+
+    public void LoadScene(string sceneGame)
     {
         SceneManager.LoadScene(sceneGame);
     }

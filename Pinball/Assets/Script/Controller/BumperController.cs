@@ -7,6 +7,7 @@ public class BumperController : MonoBehaviour
     public Collider bola;
     public float multipler;
     public float score;
+    public Color color;
     private Animator animator;
     private Renderer renderer;
 
@@ -33,11 +34,7 @@ public class BumperController : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         renderer = GetComponent<Renderer>();
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        renderer.material.color = color;
     }
 }

@@ -6,7 +6,6 @@ public class TriggerGameOver : MonoBehaviour
 {
     public Collider bola;
     public GameObject gameOverCanvas;
-    public string scene;
 
     private void OnTriggerEnter(Collider other)
     {

@@ -11,7 +11,11 @@ public class GameUIController : MonoBehaviour
 
     private void Start()
     {
-        mainMenuButton.onClick.AddListener(MainMenu);
+        if (mainMenuButton != null)
+        {
+            mainMenuButton.onClick.AddListener(MainMenu);            
+        }
+
     }
 
     public void MainMenu()
