@@ -4,5 +4,17 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 384103b8adda1ae4ea7b533df4b48eac
+  - enabled: 1
+    path: Assets/Scenes/Pinball.unity
+    guid: e3ea90be7177afe4da09502bfe7f3ee1
+  - enabled: 1
+    path: Assets/Scenes/Switch.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Bumper.unity
+    guid: 965bb5c554e4e0541ad3d598c0ab3701
   m_configObjects: {}
